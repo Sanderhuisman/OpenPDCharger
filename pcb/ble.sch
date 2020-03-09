@@ -1,0 +1,184 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5E5F6573
+P 6950 3950
+AR Path="/5E5B0438/5E5F6573" Ref="C?"  Part="1" 
+AR Path="/5E5DAB45/5E5F6573" Ref="C7"  Part="1" 
+F 0 "C7" H 7065 3996 50  0000 L CNN
+F 1 "1uF" H 7065 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6988 3800 50  0001 C CNN
+F 3 "~" H 6950 3950 50  0001 C CNN
+	1    6950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E5F6579
+P 5100 4150
+AR Path="/5E5B0438/5E5F6579" Ref="#PWR?"  Part="1" 
+AR Path="/5E5DAB45/5E5F6579" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 5100 3900 50  0001 C CNN
+F 1 "GND" H 5105 3977 50  0000 C CNN
+F 2 "" H 5100 4150 50  0001 C CNN
+F 3 "" H 5100 4150 50  0001 C CNN
+	1    5100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4100 6950 4150
+Wire Wire Line
+	6950 3800 6950 3750
+Wire Wire Line
+	5100 4150 5100 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5E5F8239
+P 6950 4150
+AR Path="/5E5B0438/5E5F8239" Ref="#PWR?"  Part="1" 
+AR Path="/5E5DAB45/5E5F8239" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 6950 3900 50  0001 C CNN
+F 1 "GND" H 6955 3977 50  0000 C CNN
+F 2 "" H 6950 4150 50  0001 C CNN
+F 3 "" H 6950 4150 50  0001 C CNN
+	1    6950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR014
+U 1 1 5E5F8472
+P 6950 3750
+F 0 "#PWR014" H 6950 3600 50  0001 C CNN
+F 1 "VDD" H 6965 3923 50  0000 C CNN
+F 2 "" H 6950 3750 50  0001 C CNN
+F 3 "" H 6950 3750 50  0001 C CNN
+	1    6950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR011
+U 1 1 5E5F8D7C
+P 5100 2900
+F 0 "#PWR011" H 5100 2750 50  0001 C CNN
+F 1 "VDD" H 5115 3073 50  0000 C CNN
+F 2 "" H 5100 2900 50  0001 C CNN
+F 3 "" H 5100 2900 50  0001 C CNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2950 5100 2900
+NoConn ~ 4300 3750
+NoConn ~ 4300 3650
+NoConn ~ 4300 3550
+Wire Wire Line
+	4300 3250 4250 3250
+Text HLabel 4250 3250 0    50   Input ~ 0
+~BLE_RESET
+Wire Wire Line
+	6000 3450 5900 3450
+Text HLabel 6000 3450 2    50   Input ~ 0
+SPI_CLK
+Text HLabel 6000 3550 2    50   Output ~ 0
+SPI_MISO
+Text HLabel 6000 3650 2    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	6000 3750 5900 3750
+Wire Wire Line
+	5900 3650 6000 3650
+Wire Wire Line
+	6000 3550 5900 3550
+$Comp
+L Device:R R4
+U 1 1 5E5FA1EC
+P 5950 3950
+F 0 "R4" H 6020 3996 50  0000 L CNN
+F 1 "47K" H 6020 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 3950 50  0001 C CNN
+F 3 "~" H 5950 3950 50  0001 C CNN
+	1    5950 3950
+	1    0    0    -1  
+$EndComp
+Text HLabel 6000 3750 2    50   Input ~ 0
+~BLE_CS
+Wire Wire Line
+	5950 3800 5950 3250
+Wire Wire Line
+	5950 3250 5900 3250
+Wire Wire Line
+	5950 3250 6000 3250
+Connection ~ 5950 3250
+Text HLabel 6000 3250 2    50   Output ~ 0
+~BLE_IRQ
+$Comp
+L power:GND #PWR?
+U 1 1 5E5FAC48
+P 5950 4150
+AR Path="/5E5B0438/5E5FAC48" Ref="#PWR?"  Part="1" 
+AR Path="/5E5DAB45/5E5FAC48" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 5950 3900 50  0001 C CNN
+F 1 "GND" H 5955 3977 50  0000 C CNN
+F 2 "" H 5950 4150 50  0001 C CNN
+F 3 "" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4150 5950 4100
+$Comp
+L Device:C C?
+U 1 1 5E5FC32B
+P 7350 3950
+AR Path="/5E5B0438/5E5FC32B" Ref="C?"  Part="1" 
+AR Path="/5E5DAB45/5E5FC32B" Ref="C8"  Part="1" 
+F 0 "C8" H 7465 3996 50  0000 L CNN
+F 1 "100nF" H 7465 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7388 3800 50  0001 C CNN
+F 3 "~" H 7350 3950 50  0001 C CNN
+	1    7350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4100 7350 4150
+Wire Wire Line
+	7350 3800 7350 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5E5FC333
+P 7350 4150
+AR Path="/5E5B0438/5E5FC333" Ref="#PWR?"  Part="1" 
+AR Path="/5E5DAB45/5E5FC333" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 7350 3900 50  0001 C CNN
+F 1 "GND" H 7355 3977 50  0000 C CNN
+F 2 "" H 7350 4150 50  0001 C CNN
+F 3 "" H 7350 4150 50  0001 C CNN
+	1    7350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR016
+U 1 1 5E5FC339
+P 7350 3750
+F 0 "#PWR016" H 7350 3600 50  0001 C CNN
+F 1 "VDD" H 7365 3923 50  0000 C CNN
+F 2 "" H 7350 3750 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

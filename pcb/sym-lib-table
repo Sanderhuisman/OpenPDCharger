@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name BQ25703ARSNT)(type Legacy)(uri ${KIPRJMOD}/lib/BQ25703ARSNT.lib)(options "")(descr ""))
+  (lib (name BQ4050RSMR)(type Legacy)(uri ${KIPRJMOD}/lib/BQ4050RSMR.lib)(options "")(descr ""))
+  (lib (name CSD17551Q3A)(type Legacy)(uri ${KIPRJMOD}/lib/CSD17551Q3A.lib)(options "")(descr ""))
+  (lib (name FDN358P)(type Legacy)(uri ${KIPRJMOD}/lib/FDN358P.lib)(options "")(descr ""))
+  (lib (name STL6P3LLH6)(type Legacy)(uri ${KIPRJMOD}/lib/STL6P3LLH6.lib)(options "")(descr ""))
+  (lib (name STL9P3LLH6)(type Legacy)(uri ${KIPRJMOD}/lib/STL9P3LLH6.lib)(options "")(descr ""))
+  (lib (name LD39050PU33R)(type Legacy)(uri ${KIPRJMOD}/lib/LD39050PU33R.lib)(options "")(descr ""))
+  (lib (name TPS55165QPWPRQ1)(type Legacy)(uri ${KIPRJMOD}/lib/TPS55165QPWPRQ1.lib)(options "")(descr ""))
+  (lib (name LTC3114EFE-1_TRPBF)(type Legacy)(uri ${KIPRJMOD}/lib/LTC3114EFE-1_TRPBF.lib)(options "")(descr ""))
+)

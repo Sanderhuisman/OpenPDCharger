@@ -1,0 +1,141 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_EEPROM:M95256-WMN6P U3
+U 1 1 5E5EC50A
+P 4750 3300
+F 0 "U3" H 4900 3700 50  0000 C CNN
+F 1 "M95256-WMN6P" H 5150 3600 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4750 3300 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E60288E
+P 4750 3700
+AR Path="/5E5B0438/5E60288E" Ref="#PWR?"  Part="1" 
+AR Path="/5E5DAB45/5E60288E" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EC1A2/5E60288E" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 4750 3450 50  0001 C CNN
+F 1 "GND" H 4755 3527 50  0000 C CNN
+F 2 "" H 4750 3700 50  0001 C CNN
+F 3 "" H 4750 3700 50  0001 C CNN
+	1    4750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3700 4750 3600
+$Comp
+L power:VDD #PWR?
+U 1 1 5E6028A3
+P 4750 2950
+AR Path="/5E5DAB45/5E6028A3" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EC1A2/5E6028A3" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 4750 2800 50  0001 C CNN
+F 1 "VDD" H 4765 3123 50  0000 C CNN
+F 2 "" H 4750 2950 50  0001 C CNN
+F 3 "" H 4750 2950 50  0001 C CNN
+	1    4750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3000 4750 2950
+Wire Wire Line
+	5250 3200 5150 3200
+Text HLabel 5250 3200 2    50   Input ~ 0
+SPI_CLK
+Text HLabel 5250 3400 2    50   Output ~ 0
+SPI_MISO
+Text HLabel 5250 3300 2    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	5150 3300 5250 3300
+Wire Wire Line
+	5250 3400 5150 3400
+$Comp
+L Device:C C?
+U 1 1 5E6028C9
+P 6000 3500
+AR Path="/5E5B0438/5E6028C9" Ref="C?"  Part="1" 
+AR Path="/5E5DAB45/5E6028C9" Ref="C?"  Part="1" 
+AR Path="/5E5EC1A2/5E6028C9" Ref="C9"  Part="1" 
+F 0 "C9" H 6115 3546 50  0000 L CNN
+F 1 "100nF" H 6115 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6038 3350 50  0001 C CNN
+F 3 "~" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3650 6000 3700
+Wire Wire Line
+	6000 3350 6000 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5E6028D1
+P 6000 3700
+AR Path="/5E5B0438/5E6028D1" Ref="#PWR?"  Part="1" 
+AR Path="/5E5DAB45/5E6028D1" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EC1A2/5E6028D1" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 6000 3450 50  0001 C CNN
+F 1 "GND" H 6005 3527 50  0000 C CNN
+F 2 "" H 6000 3700 50  0001 C CNN
+F 3 "" H 6000 3700 50  0001 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5E6028D7
+P 6000 3300
+AR Path="/5E5DAB45/5E6028D7" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EC1A2/5E6028D7" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 6000 3150 50  0001 C CNN
+F 1 "VDD" H 6015 3473 50  0000 C CNN
+F 2 "" H 6000 3300 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 3400 0    50   Input ~ 0
+~EEPROM_CS
+Wire Wire Line
+	4300 3400 4350 3400
+Wire Wire Line
+	4350 3300 4300 3300
+$Comp
+L power:VDD #PWR?
+U 1 1 5E603CB9
+P 4300 3150
+AR Path="/5E5DAB45/5E603CB9" Ref="#PWR?"  Part="1" 
+AR Path="/5E5EC1A2/5E603CB9" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 4300 3000 50  0001 C CNN
+F 1 "VDD" H 4315 3323 50  0000 C CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3200 4300 3150
+Wire Wire Line
+	4350 3200 4300 3200
+Connection ~ 4300 3200
+Wire Wire Line
+	4300 3300 4300 3200
+$EndSCHEMATC
