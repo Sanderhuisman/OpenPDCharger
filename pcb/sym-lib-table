@@ -8,4 +8,8 @@
   (lib (name LD39050PU33R)(type Legacy)(uri ${KIPRJMOD}/lib/LD39050PU33R.lib)(options "")(descr ""))
   (lib (name TPS55165QPWPRQ1)(type Legacy)(uri ${KIPRJMOD}/lib/TPS55165QPWPRQ1.lib)(options "")(descr ""))
   (lib (name LTC3114EFE-1_TRPBF)(type Legacy)(uri ${KIPRJMOD}/lib/LTC3114EFE-1_TRPBF.lib)(options "")(descr ""))
+  (lib (name LTC4011CFEPBF)(type Legacy)(uri ${KIPRJMOD}/lib/LTC4011CFEPBF.lib)(options "")(descr ""))
+  (lib (name ESDALC6V1W5)(type Legacy)(uri ${KIPRJMOD}/lib/ESDALC6V1W5.lib)(options "")(descr ""))
+  (lib (name BLUENRG-M2SA)(type Legacy)(uri ${KIPRJMOD}/lib/BLUENRG-M2SA.lib)(options "")(descr ""))
+  (lib (name openpcharger)(type Legacy)(uri ${KIPRJMOD}/lib/openpcharger.lib)(options "")(descr ""))
 )

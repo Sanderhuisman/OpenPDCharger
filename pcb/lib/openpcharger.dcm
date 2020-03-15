@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BAT_GND
+D Power symbol creates a global label with name "BAT_GND" , ground
+K power-flag
+$ENDCMP
+#
+$CMP STM32G431RBT6
+D ARM Cortex-M4 MCU+FPU, 128KB flash, 32KB RAM, 170MHz, 2.4-3.6V, LQFP-64
+K ARM Cortex-M4 STM32G4 STM32G4x1 Mainstream Line
+F https://www.st.com/resource/en/datasheet/stm32g431rb.pdf
+$ENDCMP
+#
+$CMP VBUS_5V
+D Power symbol creates a global label with name "VBUS_5V"
+K power-flag
+$ENDCMP
+#
+#End Doc Library

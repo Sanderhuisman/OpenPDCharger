@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 5 10
 Title ""
 Date ""
 Rev ""
@@ -29,14 +29,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E5F6579
-P 5100 4150
+P 4200 5750
 AR Path="/5E5B0438/5E5F6579" Ref="#PWR?"  Part="1" 
 AR Path="/5E5DAB45/5E5F6579" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 5100 3900 50  0001 C CNN
-F 1 "GND" H 5105 3977 50  0000 C CNN
-F 2 "" H 5100 4150 50  0001 C CNN
-F 3 "" H 5100 4150 50  0001 C CNN
-	1    5100 4150
+F 0 "#PWR012" H 4200 5500 50  0001 C CNN
+F 1 "GND" H 4205 5577 50  0000 C CNN
+F 2 "" H 4200 5750 50  0001 C CNN
+F 3 "" H 4200 5750 50  0001 C CNN
+	1    4200 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -44,7 +44,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 3800 6950 3750
 Wire Wire Line
-	5100 4150 5100 4050
+	4200 5750 4200 5650
 $Comp
 L power:GND #PWR?
 U 1 1 5E5F8239
@@ -82,64 +82,36 @@ F 3 "" H 5100 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 2950 5100 2900
-NoConn ~ 4300 3750
-NoConn ~ 4300 3650
-NoConn ~ 4300 3550
-Wire Wire Line
-	4300 3250 4250 3250
-Text HLabel 4250 3250 0    50   Input ~ 0
+NoConn ~ 2300 5450
+NoConn ~ 4100 5250
+NoConn ~ 2300 5350
+Text HLabel 1950 4350 0    50   Input ~ 0
 ~BLE_RESET
-Wire Wire Line
-	6000 3450 5900 3450
-Text HLabel 6000 3450 2    50   Input ~ 0
+Text HLabel 1950 4550 0    50   Input ~ 0
 SPI_CLK
-Text HLabel 6000 3550 2    50   Output ~ 0
+Text HLabel 1950 4750 0    50   Output ~ 0
 SPI_MISO
-Text HLabel 6000 3650 2    50   Input ~ 0
+Text HLabel 1950 4850 0    50   Input ~ 0
 SPI_MOSI
-Wire Wire Line
-	6000 3750 5900 3750
-Wire Wire Line
-	5900 3650 6000 3650
-Wire Wire Line
-	6000 3550 5900 3550
 $Comp
 L Device:R R4
 U 1 1 5E5FA1EC
-P 5950 3950
-F 0 "R4" H 6020 3996 50  0000 L CNN
-F 1 "47K" H 6020 3905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 3950 50  0001 C CNN
-F 3 "~" H 5950 3950 50  0001 C CNN
-	1    5950 3950
+P 4200 5450
+F 0 "R4" H 4270 5496 50  0000 L CNN
+F 1 "10K" H 4270 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4130 5450 50  0001 C CNN
+F 3 "~" H 4200 5450 50  0001 C CNN
+	1    4200 5450
 	1    0    0    -1  
 $EndComp
-Text HLabel 6000 3750 2    50   Input ~ 0
-~BLE_CS
 Wire Wire Line
-	5950 3800 5950 3250
+	4200 5300 4200 4550
 Wire Wire Line
-	5950 3250 5900 3250
-Wire Wire Line
-	5950 3250 6000 3250
-Connection ~ 5950 3250
-Text HLabel 6000 3250 2    50   Output ~ 0
+	4100 4550 4200 4550
+Text HLabel 4300 4550 2    50   Output ~ 0
 ~BLE_IRQ
-$Comp
-L power:GND #PWR?
-U 1 1 5E5FAC48
-P 5950 4150
-AR Path="/5E5B0438/5E5FAC48" Ref="#PWR?"  Part="1" 
-AR Path="/5E5DAB45/5E5FAC48" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 5950 3900 50  0001 C CNN
-F 1 "GND" H 5955 3977 50  0000 C CNN
-F 2 "" H 5950 4150 50  0001 C CNN
-F 3 "" H 5950 4150 50  0001 C CNN
-	1    5950 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5950 4150 5950 4100
+	4200 5650 4200 5600
 $Comp
 L Device:C C?
 U 1 1 5E5FC32B
@@ -181,4 +153,103 @@ F 3 "" H 7350 3750 50  0001 C CNN
 	1    7350 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L BLUENRG-M2SA:BLUENRG-M2SA U10
+U 1 1 5E697892
+P 3200 4950
+F 0 "U10" H 3200 6015 50  0000 C CNN
+F 1 "BLUENRG-M2SA" H 3200 5924 50  0000 C CNN
+F 2 "Lib:XCVR_BLUENRG-M2SA" H 3200 4950 50  0001 L BNN
+F 3 "Manufacturer recommendations" H 3200 4950 50  0001 L BNN
+F 4 "2" H 3200 4950 50  0001 L BNN "Field4"
+F 5 "2.5mm" H 3200 4950 50  0001 L BNN "Field5"
+F 6 "STMicroelectronics" H 3200 4950 50  0001 L BNN "Field6"
+	1    3200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5650 4100 5650
+Wire Wire Line
+	4100 4150 4200 4150
+Wire Wire Line
+	4200 4150 4200 4050
+$Comp
+L power:VDD #PWR0169
+U 1 1 5E69A7FE
+P 4200 4050
+F 0 "#PWR0169" H 4200 3900 50  0001 C CNN
+F 1 "VDD" H 4215 4223 50  0000 C CNN
+F 2 "" H 4200 4050 50  0001 C CNN
+F 3 "" H 4200 4050 50  0001 C CNN
+	1    4200 4050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 4650 0    50   Input ~ 0
+~BLE_CS
+Connection ~ 4200 5650
+Connection ~ 4200 4550
+Wire Wire Line
+	4200 4550 4300 4550
+Wire Wire Line
+	1950 4850 2300 4850
+Wire Wire Line
+	1950 4750 2300 4750
+Wire Wire Line
+	1950 4650 2300 4650
+Wire Wire Line
+	1950 4550 2300 4550
+Wire Wire Line
+	1950 4350 2300 4350
+Text Label 2000 4650 0    50   ~ 0
+~BLE_CS
+Wire Wire Line
+	4100 4950 4300 4950
+Text Label 4300 4950 0    50   ~ 0
+~BLE_CS
+NoConn ~ 4100 5150
+NoConn ~ 4100 5050
+NoConn ~ 4100 4650
+Wire Wire Line
+	4100 4750 4300 4750
+Wire Wire Line
+	4300 4850 4100 4850
+Text Label 4300 4850 0    50   ~ 0
+SWTDIO
+Text Label 4300 4750 0    50   ~ 0
+SWTCLK
+Wire Wire Line
+	2300 4950 1950 4950
+Text HLabel 1500 4950 0    50   Input ~ 0
+USART_TXD
+Wire Wire Line
+	2200 5050 2300 5050
+Text HLabel 1500 5050 0    50   Input ~ 0
+USART_RXD
+NoConn ~ 2300 5150
+$Comp
+L Device:R R50
+U 1 1 5E6AC024
+P 1800 4950
+F 0 "R50" V 2000 4950 50  0000 C CNN
+F 1 "0" V 2100 4950 50  0000 C CNN
+F 2 "" V 1730 4950 50  0001 C CNN
+F 3 "~" H 1800 4950 50  0001 C CNN
+	1    1800 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 5E6AC46A
+P 2050 5050
+F 0 "R51" V 2150 5050 50  0000 C CNN
+F 1 "0" V 2250 5050 50  0000 C CNN
+F 2 "" V 1980 5050 50  0001 C CNN
+F 3 "~" H 2050 5050 50  0001 C CNN
+	1    2050 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 5050 1900 5050
+Wire Wire Line
+	1650 4950 1500 4950
 $EndSCHEMATC
